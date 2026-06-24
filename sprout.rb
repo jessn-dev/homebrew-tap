@@ -5,21 +5,21 @@
 class Sprout < Formula
   desc "The Ultimate Custom Spring Initializer CLI"
   homepage "https://github.com/jessn-dev/sprout"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jessn-dev/sprout/releases/download/v0.1.0/sprout_0.1.0_darwin_amd64.tar.gz"
-      sha256 "e33bb4643ccf5e49360d19b352e39fb8915e86cc4cf05a6b5bfc3602d173072a"
+      url "https://github.com/jessn-dev/sprout/releases/download/v0.1.1/sprout_0.1.1_darwin_amd64.tar.gz"
+      sha256 "43e536b710e69325d0f511bf1080878fbab6d5adc3e3df60ff31f68c1b134065"
 
       define_method(:install) do
         bin.install "sprout"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jessn-dev/sprout/releases/download/v0.1.0/sprout_0.1.0_darwin_arm64.tar.gz"
-      sha256 "4b7f748f5d2d41b0752118b5f573492ffe9bd42bcb9ff39d007dae4856bf1888"
+      url "https://github.com/jessn-dev/sprout/releases/download/v0.1.1/sprout_0.1.1_darwin_arm64.tar.gz"
+      sha256 "41b4b9181606c2c372a1f3c51963e11aecb0b4847a6c053422fc6ca95129efcd"
 
       define_method(:install) do
         bin.install "sprout"
@@ -29,15 +29,15 @@ class Sprout < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jessn-dev/sprout/releases/download/v0.1.0/sprout_0.1.0_linux_amd64.tar.gz"
-      sha256 "74738ed971377c4ae5f5da5b9870545bb21e420b883a31419d07b01df2e533bf"
+      url "https://github.com/jessn-dev/sprout/releases/download/v0.1.1/sprout_0.1.1_linux_amd64.tar.gz"
+      sha256 "3579504a415d6c12ebe87c5a8fc2b6518b643be5b9823e640f62919b233144b9"
       define_method(:install) do
         bin.install "sprout"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jessn-dev/sprout/releases/download/v0.1.0/sprout_0.1.0_linux_arm64.tar.gz"
-      sha256 "44c27f20cb677d641aba18b2fd9e7b086b82ccd32a0d46494b53dd4db09ba47f"
+      url "https://github.com/jessn-dev/sprout/releases/download/v0.1.1/sprout_0.1.1_linux_arm64.tar.gz"
+      sha256 "788ce360f793830ed0ed70833ce1c28fa5319a5a80a2fdf86fd81e9284eaeec6"
       define_method(:install) do
         bin.install "sprout"
       end
